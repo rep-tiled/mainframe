@@ -53,6 +53,24 @@
     hackerName = document.getElementById("hackerNameDisplay").textContent;
     }
     });
-    
+
+/*var to displays*/
+    function displayVarLoad(){
+        document.getElementById("hackerNameDisplay").innerHTML = hackerName;
+    }
+
+/*save loop*/
+setInterval(function(){
+    saveGame();
+},3000);
+
+
+/*cntrl s override*/
+document.addEventListener("keydown",function(event){
+    if (event.ctrlKey && event.which == 83){ //cntrl + s
+        event.preventDefault();
+        saveGame();
+    }
+},false);
 </script>
 </body>
