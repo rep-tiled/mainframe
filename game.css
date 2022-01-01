@@ -2,6 +2,9 @@
 body {
   background-color:#1E2730;
   font-family: monospace;
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden
 }
 
 /*drag div*/
@@ -76,3 +79,14 @@ nav{
     margin: auto; 
     text-align: center;
 }
+
+.desktopIcon{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+
+.iconHoverOutline:hover {
+    background-color: rgba(65, 65, 65, 0.233);
+    padding-bottom: 15px;
+  }
