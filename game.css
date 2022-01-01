@@ -69,4 +69,5 @@ nav{
 /*grid sidebar*/
 .sideGrid {
     display: inline-grid;
+    padding: 2%;
   }
