@@ -29,6 +29,7 @@ body {
 .mainArea{
     float: right;
     width: 70%;
+    padding-top: 10px;
 }
 
 .sideBar{
@@ -50,4 +51,17 @@ body {
 [contenteditable="true"].single-line * {
     display:inline;
     white-space:nowrap;
+}
+
+/*header*/
+header{
+    background-color: #354656;
+    margin: 0%;
+    width: 100%;
+}
+
+nav{
+    padding: 2px 2px 2px 10px;
+    color: #B2A674;
+    font-family: Serif;
 }
