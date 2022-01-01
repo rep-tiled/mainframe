@@ -2,7 +2,7 @@
 function saveGame(){
     var gameSave = {
         /*player*/
-        hackerName: User,
+        hackerName: hackerName,
         cyptoCoins: cyptoCoins
     }
     localStorage.setItem("mainFrameSave", JSON.stringify(gameSave));

@@ -1,6 +1,6 @@
 /*setup base vars*/
 //player
-var hackerName = User;
+var hackerName = "User";
 var cyptoCoins = 0;
 //items
 
