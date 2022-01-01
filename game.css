@@ -71,3 +71,8 @@ nav{
     display: inline-grid;
     padding: 2%;
   }
+
+.iconText{
+    margin: auto; 
+    text-align: center;
+}
