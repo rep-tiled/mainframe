@@ -24,7 +24,7 @@
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
     <div id="dragdivheader"><span>root/user</span></div>
     <p contenteditable="true" id="hackerNameDisplay" class="single-line">Guest</p>
-    <p>this</p>
+    <p id="cryptoDisplay" class="single-line">0</p>
     <p>DIV</p>
      </div>
 </div>
@@ -55,9 +55,10 @@
     });
 
 /*var to displays*/
-    function displayVarLoad(){
-        document.getElementById("hackerNameDisplay").innerHTML = hackerName;
-    }
+function displayVarLoad(){
+    document.getElementById("hackerNameDisplay").innerHTML = hackerName;
+    document.getElementById("cryptoDisplay").innerHTML = cyptoCoins;
+}
 
 /*save loop*/
 setInterval(function(){
@@ -72,5 +73,8 @@ document.addEventListener("keydown",function(event){
         saveGame();
     }
 },false);
+
+/*runs the display function one*/
+displayVarLoad();
 </script>
 </body>
