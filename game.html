@@ -15,7 +15,7 @@
    <div id="dragdiv">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
     <div id="dragdivheader"><span>root/user</span></div>
-    <p>Move</p>
+    <p contenteditable="true" id="hackerNameDisplay" class="single-line">Guest</p>
     <p>this</p>
     <p>DIV</p>
      </div>
@@ -26,8 +26,25 @@
 
 </div>
 
-<!--scripts-->
+<!--script links-->
 <script src="drag.js"></script>
 <script src="scripts/setupVars.js"></script>
 <script src="scripts/saveVars.js"></script>
+
+<!--input scripts-->
+<script>
+
+/*username field input*/
+    var input = document.getElementById("hackerNameDisplay");
+    input.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger
+    hackerName = document.getElementById("hackerNameDisplay").textContent;
+    }
+    });
+    
+</script>
 </body>
