@@ -1,21 +1,37 @@
 /*body*/
 body {
-    background-color:#192e17;
-    }
+  background-color:#1E2730;
+  font-family: monospace;
+}
 
 /*drag div*/
 #dragdiv {
   position: absolute;
   z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
+  background-color: #1B1C21;
+  border: 1px solid #2d3d2e;
   text-align: center;
+  color: #B2A674;
 }
 
 #dragdivheader {
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   cursor: move;
   z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
+  background-color: #2d3d2e;
+  color: #B2A674;
+}
+
+/*areas*/
+.mainArea{
+    float: right;
+    width: 70%;
+}
+
+.sideBar{
+    float: left;
+    width: 30%;
 }
