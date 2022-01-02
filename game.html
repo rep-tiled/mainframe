@@ -87,6 +87,7 @@
 <script src="drag.js"></script>
 <script src="scripts/setupVars.js"></script>
 <script src="scripts/saveVars.js"></script>
+<script src="scripts/addScore.js"></script>
 
 <!--audio players-->
 <audio id="audio" controls style="display:none">
@@ -201,6 +202,7 @@ document.onkeypress=function(e){
     
     if(numberOfLines > 12){
         document.getElementById('codeText').textContent = "";
+        addBitcoin(1);
     } 
 }
 </script>
