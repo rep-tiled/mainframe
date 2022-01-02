@@ -181,9 +181,9 @@ document.addEventListener("keydown",function(event){
 /*runs the display function one*/
 displayVarLoad();
 
-/*keypress*/
+/*any key press audio*/
 document.onkeypress=function(e){
-    if (document.getElementById("terminalPan").hidden == false){
+    if (document.getElementById("terminalPan").hidden == false){ //while terminal is open
         document.getElementById('audio').play();
     }
 }
