@@ -31,13 +31,13 @@ body {
 /*areas*/
 .mainArea{
     float: right;
-    width: 70%;
+    width: 90%;
     padding-top: 10px;
 }
 
 .sideBar{
     float: left;
-    width: 30%;
+    width: 10%;
 }
 
 /*1 line editable lock*/
@@ -83,10 +83,16 @@ nav{
 .desktopIcon{
     width: 70px;
     height: 70px;
-    padding: 5px;
+    padding-bottom: 15px;
 }
 
 .iconHoverOutline:hover {
     background-color: rgba(65, 65, 65, 0.233);
-    padding-bottom: 15px;
+    outline-style: inset;
+    outline-width: 1px;
+    outline-color: rgba(85, 85, 85, 0.233);
   }
+
+.iconHoverOutline{
+    padding: 4px;
+}
