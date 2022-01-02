@@ -39,6 +39,15 @@
     </div>
     </div>
 
+    <!-- Shop DIV -->
+    <div id="terminalPan">
+        <div id="dragdiv3">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="dragdivheader3"><span>root/prompt</span></div>
+        <p>terminal</p>
+        </div>
+        </div>
+
 </div>
 
 <!--left area-->
@@ -59,6 +68,14 @@
         <h3 class="iconText">Shop</h3>
         </div>
         </div>
+<br> <!--lil break to space things out -->
+        <!--icon-->
+        <div class="iconHoverOutline">
+        <div class="desktopIcon">
+        <img draggable="false" onclick="toggleTerminal()" src="https://i.imgur.com/RLnYgGc.png" alt="Terminal" height="100%" width="100%">
+        <h3 class="iconText">Terminal</h3>
+        </div>
+        </div>
 
     </div>
 </div>
@@ -75,6 +92,7 @@
 /*inital window hide*/
 document.getElementById("userPan").hidden = true; //hide user profile
 document.getElementById("shopPan").hidden = true; //hide shop
+document.getElementById("terminalPan").hidden = true; //hide terminal
 
 /*toggle user panel*/
 function toggleUserpan(){
@@ -91,6 +109,18 @@ function toggleUserpan(){
 /*toggle shop menu*/
 function toggleShop(){
     var PanObj = document.getElementById("shopPan");
+    if (PanObj.hidden == false){
+    PanObj.hidden = true;
+    }
+    else
+    {
+    PanObj.hidden = false;
+    }
+}
+
+/*toggle input terminal*/
+function toggleTerminal(){
+    var PanObj = document.getElementById("terminalPan");
     if (PanObj.hidden == false){
     PanObj.hidden = true;
     }

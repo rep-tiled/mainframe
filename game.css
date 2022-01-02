@@ -31,7 +31,7 @@ body {
   color: #B2A674;
 }
 
-/*drag div*/
+/*drag div 2*/
 #dragdiv2 {
     position: absolute;
     z-index: 9;
@@ -51,6 +51,27 @@ body {
     background-color: #2d3d2e;
     color: #B2A674;
   }
+
+/*drag div 3*/
+#dragdiv3 {
+  position: absolute;
+  z-index: 9;
+  background-color: #1B1C21;
+  border: 1px solid #2d3d2e;
+  text-align: center;
+  color: #B2A674;
+}
+
+#dragdivheader3 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2d3d2e;
+  color: #B2A674;
+}
 
 /*areas*/
 .mainArea{
