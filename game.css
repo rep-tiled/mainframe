@@ -147,14 +147,13 @@ nav{
 .terminalText{
   padding: 7px;
   padding-left: 0px;
-  padding-right: 300px;
+  width: 500px;
+  height: 200px;
 }
 
-.inLineButton{
-  display:inline-block;
-}
-
-.termButton{
-  width: 100%;
-  padding-left: 50%;
+/*hackertyper*/
+.codeText {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: left;
 }

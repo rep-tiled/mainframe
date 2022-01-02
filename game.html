@@ -46,13 +46,7 @@
         <div id="dragdivheader3"><span>root/prompt</span></div>
         <div class="terminalText">
         <p>User@DESKTOP-XXXXX XXXXX~</p>
-        <p id="termLine1"><br></p>
-        <p id="termLine2"><br></p>
-        <p id="termLine3"><br></p>
-        <p id="termLine4"><br></p>
-        <p id="termLine5"><br></p>
-        <p id="termLine6"><br></p>
-        <p id="termLine7"><br></p>
+        <p class="codeText" id="codeText" dir="ltr"></p>
         </div>
         </div>
         </div>
@@ -181,11 +175,25 @@ document.addEventListener("keydown",function(event){
 /*runs the display function one*/
 displayVarLoad();
 
+/*random strings*/
+var textArray = [
+    '1',
+    '0'
+];
+
+
 /*any key press audio*/
 document.onkeypress=function(e){
     if (document.getElementById("terminalPan").hidden == false){ //while terminal is open
         document.getElementById('audio').play();
+
+        var randomNumber = Math.floor(Math.random()*textArray.length); //random
+
+        document.getElementById('codeText').textContent = document.getElementById('codeText').textContent + textArray[randomNumber];
     }
+    if(document.getElementById('codeText').textContent.length > 621){
+        document.getElementById('codeText').textContent = "";
+    } 
 }
 </script>
 </body>
