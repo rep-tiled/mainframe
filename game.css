@@ -28,6 +28,27 @@ body {
   color: #B2A674;
 }
 
+/*drag div*/
+#dragdiv2 {
+    position: absolute;
+    z-index: 9;
+    background-color: #1B1C21;
+    border: 1px solid #2d3d2e;
+    text-align: center;
+    color: #B2A674;
+  }
+  
+  #dragdivheader2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2d3d2e;
+    color: #B2A674;
+  }
+
 /*areas*/
 .mainArea{
     float: right;
