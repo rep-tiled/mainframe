@@ -154,7 +154,9 @@ nav{
 /*hackertyper*/
 .codeText {
   overflow-wrap: break-word;
+  width:inherit;
   word-wrap: break-word;
   text-align: left;
+  display: block;
   white-space: pre-line
 }
