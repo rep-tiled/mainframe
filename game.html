@@ -19,13 +19,16 @@
 
 <!--right area-->
 <div class="mainArea">
-    <!-- Draggable DIV -->
-   <div id="dragdiv">
+    <!-- User DIV -->
+    <div id="userPan">
+    <div id="dragdiv">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
     <div id="dragdivheader"><span>root/user</span></div>
     <p contenteditable="true" id="hackerNameDisplay" class="single-line">Guest</p>
     <p id="cryptoDisplay" class="single-line">0</p>
-     </div>
+    </div>
+    </div>
+
 </div>
 
 <!--left area-->
@@ -34,7 +37,7 @@
         <!--icon-->
         <div class="iconHoverOutline">
         <div class="desktopIcon">
-        <img src="https://i.imgur.com/BmSkOoh.png" alt="User" height="100%" width="100%">
+        <img onclick="toggleUserpan()" src="https://i.imgur.com/BmSkOoh.png" alt="User" height="100%" width="100%">
         <h3 class="iconText">User</h3>
         </div>
         </div>
@@ -48,6 +51,18 @@
 
 <!--input scripts-->
 <script>
+
+/*toggle user panel*/
+function toggleUserpan(){
+    var userPanObj = document.getElementById("userPan");
+    if (userPanObj.hidden == false){
+    userPanObj.hidden = true;
+    }
+    else
+    {
+    userPanObj.hidden = false;
+    }
+}
 
 /*username field input*/
     var input = document.getElementById("hackerNameDisplay");
