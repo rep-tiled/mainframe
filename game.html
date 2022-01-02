@@ -47,7 +47,7 @@
         <!--icon-->
         <div class="iconHoverOutline">
         <div class="desktopIcon">
-        <img onclick="toggleUserpan()" src="https://i.imgur.com/BmSkOoh.png" alt="User" height="100%" width="100%">
+        <img draggable="false" onclick="toggleUserpan()" src="https://i.imgur.com/BmSkOoh.png" alt="User" height="100%" width="100%">
         <h3 class="iconText">User</h3>
         </div>
         </div>
@@ -55,7 +55,7 @@
         <!--icon-->
         <div class="iconHoverOutline">
         <div class="desktopIcon">
-        <img onclick="toggleShop()" src="https://i.imgur.com/d46M4IT.png" alt="Shop" height="100%" width="100%">
+        <img draggable="false" onclick="toggleShop()" src="https://i.imgur.com/d46M4IT.png" alt="Shop" height="100%" width="100%">
         <h3 class="iconText">Shop</h3>
         </div>
         </div>
@@ -75,10 +75,6 @@
 /*inital window hide*/
 document.getElementById("userPan").hidden = true; //hide user profile
 document.getElementById("shopPan").hidden = true; //hide shop
-
-/*ghost image fix*/
-document.getElementById("userPan").setAttribute('draggable', false);
-document.getElementById("shopPan").setAttribute('draggable', false);
 
 /*toggle user panel*/
 function toggleUserpan(){
