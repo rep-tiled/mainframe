@@ -39,7 +39,7 @@
     </div>
     </div>
 
-    <!-- Shop DIV -->
+    <!-- Terminal DIV -->
     <div id="terminalPan">
         <div id="dragdiv3">
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
@@ -53,14 +53,6 @@
         <p id="termLine5"><br></p>
         <p id="termLine6"><br></p>
         <p id="termLine7"><br></p>
-        <!--button row-->
-        <div class="inlineButton">
-        <button>red</button>
-        <button>blue</button>
-        <button>green</button>
-        <button>yellow</button>
-        </div>
-        
         </div>
         </div>
         </div>
@@ -101,6 +93,11 @@
 <script src="drag.js"></script>
 <script src="scripts/setupVars.js"></script>
 <script src="scripts/saveVars.js"></script>
+
+<!--audio players-->
+<audio id="audio" controls style="display:none">
+    <source src="./assets/click.mp3" type="audio/mp3"> Your browser does not support the audio element.
+</audio>
 
 <!--input scripts-->
 <script>
@@ -183,5 +180,12 @@ document.addEventListener("keydown",function(event){
 
 /*runs the display function one*/
 displayVarLoad();
+
+/*keypress*/
+document.onkeypress=function(e){
+    if (document.getElementById("terminalPan").hidden == false){
+        document.getElementById('audio').play();
+    }
+}
 </script>
 </body>

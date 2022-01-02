@@ -153,3 +153,8 @@ nav{
 .inLineButton{
   display:inline-block;
 }
+
+.termButton{
+  width: 100%;
+  padding-left: 50%;
+}
