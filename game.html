@@ -177,8 +177,12 @@ displayVarLoad();
 
 /*random strings*/
 var textArray = [
-    '1',
-    '0'
+    'function makeid(length) { \n',
+    'result = keychain \n',
+    'for(true){alizard=cool}\n',
+    'charactersLength = characters.length;\n',
+    'false = true;\n'
+
 ];
 
 
@@ -191,7 +195,11 @@ document.onkeypress=function(e){
 
         document.getElementById('codeText').textContent = document.getElementById('codeText').textContent + textArray[randomNumber];
     }
-    if(document.getElementById('codeText').textContent.length > 621){
+    
+
+    const numberOfLines = document.getElementById('codeText').textContent.match(/^/gm).length;
+    
+    if(numberOfLines > 12){
         document.getElementById('codeText').textContent = "";
     } 
 }
