@@ -72,21 +72,32 @@
 <script>
 
 //PANEL TOGGLE LATCHES//
+/*inital window hide*/
+document.getElementById("userPan").hidden = true; //hide user profile
+document.getElementById("shopPan").hidden = true; //hide shop
+
 /*toggle user panel*/
 function toggleUserpan(){
-    var userPanObj = document.getElementById("userPan");
-    if (userPanObj.hidden == false){
-    userPanObj.hidden = true;
+    var PanObj = document.getElementById("userPan");
+    if (PanObj.hidden == false){
+    PanObj.hidden = true;
     }
     else
     {
-    userPanObj.hidden = false;
+    PanObj.hidden = false;
     }
 }
 
 /*toggle shop menu*/
 function toggleShop(){
-    //todo: setup shop drag window
+    var PanObj = document.getElementById("shopPan");
+    if (PanObj.hidden == false){
+    PanObj.hidden = true;
+    }
+    else
+    {
+    PanObj.hidden = false;
+    }
 }
 
 //INTERACTIONS//
