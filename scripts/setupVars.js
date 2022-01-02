@@ -11,5 +11,3 @@ if(savedGame !== null){
     hackerName = savedGame.hackerName
     cyptoCoins = savedGame.cyptoCoins
 }
-
-//todo: add load game function so the game knows to update visuals
