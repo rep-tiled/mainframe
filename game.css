@@ -4,7 +4,10 @@ body {
   font-family: monospace;
   margin: 0; 
   height: 100%; 
-  overflow: hidden
+  overflow: hidden;
+
+  /*turn of select*/
+  user-select: none;
 }
 
 /*drag div*/
