@@ -76,6 +76,10 @@
 document.getElementById("userPan").hidden = true; //hide user profile
 document.getElementById("shopPan").hidden = true; //hide shop
 
+/*ghost image fix*/
+document.getElementById("userPan").setAttribute('draggable', false);
+document.getElementById("shopPan").setAttribute('draggable', false);
+
 /*toggle user panel*/
 function toggleUserpan(){
     var PanObj = document.getElementById("userPan");
