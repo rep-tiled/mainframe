@@ -63,6 +63,7 @@
 <!--input scripts-->
 <script>
 
+//PANEL TOGGLE LATCHES//
 /*toggle user panel*/
 function toggleUserpan(){
     var userPanObj = document.getElementById("userPan");
@@ -75,6 +76,12 @@ function toggleUserpan(){
     }
 }
 
+/*toggle shop menu*/
+function toggleShop(){
+    //todo: setup shop drag window
+}
+
+//INTERACTIONS//
 /*username field input*/
     var input = document.getElementById("hackerNameDisplay");
     input.addEventListener("keyup", function(event) {
@@ -86,6 +93,7 @@ function toggleUserpan(){
     hackerName = document.getElementById("hackerNameDisplay").textContent;
     }
     });
+    
 
 /*var to displays*/
 function displayVarLoad(){
