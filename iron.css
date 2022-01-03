@@ -1,8 +1,18 @@
-/*iron css*/
+/*base*/
 .IronWeb{
     outline-style: inset;
     outline-width: 1px;
     width: 1000px;
     height: 800px;
     background-color: white;
+}
+
+/*top bar*/
+.TopBar{
+    height: 20px;
+    background-color: gray;
+}
+
+.TopBarText{
+    display: inline;
 }
