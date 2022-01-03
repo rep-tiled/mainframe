@@ -21,5 +21,7 @@ var textArray = [
     'clicker();\n',
     'subtoalizardguy;\n',
     '//lol\n',
-    'trapped + sphere = panic;\n'
+    'trapped + sphere = panic;\n',
+    'robotry:bobotby;\n',
+    'presets(-1);\n'
 ];
