@@ -3,7 +3,7 @@
 <head>
     <!--meta-->
     <title>main frame pre-alpha</title>
-    <link href='game.css?version=4' rel='stylesheet'></link>
+    <link href='game.css?version=5' rel='stylesheet'></link>
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/9yk0ckn.png">
 </head>
 <!--body-->
@@ -211,7 +211,7 @@ document.onkeydown=function(e){
 
     const numberOfLines = document.getElementById('codeText').textContent.match(/^/gm).length;
     
-    if(numberOfLines > 12){
+    if(numberOfLines > 24){
         document.getElementById('codeText').textContent = "";
         addBitcoin(1);
         document.getElementById('good').play();
