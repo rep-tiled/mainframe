@@ -24,5 +24,6 @@ var textArray = [
     'trapped + sphere = panic;\n',
     'robotry:bobotby;\n',
     'presets(-1);\n',
-    'help = url("https://rep-tiled.tk/mainframe/help");\n'
+    'help = url("https://rep-tiled.tk/mainframe/help");\n',
+    'reset(favicon);\n'
 ];
