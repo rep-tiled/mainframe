@@ -8,6 +8,6 @@ var cyptoCoins = 0;
 var savedGame = JSON.parse(localStorage.getItem("mainFrameSave"))
 if(savedGame !== null){
     //player
-    hackerName = savedGame.hackerName
-    cyptoCoins = savedGame.cyptoCoins
+    hackerName = savedGame.hackerName;
+    cyptoCoins = savedGame.cyptoCoins;
 }
