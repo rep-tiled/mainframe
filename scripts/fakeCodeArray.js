@@ -10,7 +10,15 @@ var textArray = [
     'event.preventDefault();\n',
     'gorillaFirst()\n',
     'struct group_info init_groups = { .usage = ATOMIC_INIT(3) };\n',
-    '	struct group_info *group_info;\n'
-
-
+    '	struct group_info *group_info;\n',
+    '   gaming = true;\n',
+    'Camelcasing();\n',
+    'Function DesktobMode{DesktobMode()}\n',
+    'ebounce(42);',
+    '//backluck\n',
+    'e = f;\n',
+    'f = g;\n',
+    'clicker();\n',
+    'subtoalizardguy;\n',
+    '//lol\n'
 ];

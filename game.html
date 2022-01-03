@@ -98,6 +98,8 @@
 <!--input scripts-->
 <script>
 
+var elock = false;
+
 //PANEL TOGGLE LATCHES//
 /*inital window hide*/
 document.getElementById("userPan").hidden = true; //hide user profile
@@ -178,7 +180,9 @@ document.addEventListener("keydown",function(event){
 displayVarLoad();
 
 /*any key press audio*/
-document.onkeypress=function(e){
+document.onkeydown=function(e){
+   
+    if(elock == false){
     if (document.getElementById("terminalPan").hidden == false){ //while terminal is open
         document.getElementById('audio').play();
 
@@ -195,5 +199,16 @@ document.onkeypress=function(e){
         addBitcoin(1);
     } 
 }
+
+elock = true;    
+}
+
+/*unlock elock*/
+document.onkeyup=function(e){
+    elock = false;
+}
+
+
+
 </script>
 </body>
