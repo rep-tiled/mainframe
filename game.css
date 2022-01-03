@@ -14,7 +14,7 @@ body {
 #dragdiv {
   position: absolute;
   z-index: 9;
-  background-color: #1B1C21;
+  background-color: #000000;
   border: 1px solid #2d3d2e;
   text-align: center;
   color: #B2A674;
@@ -35,7 +35,7 @@ body {
 #dragdiv2 {
     position: absolute;
     z-index: 9;
-    background-color: #1B1C21;
+    background-color: #000000;
     border: 1px solid #2d3d2e;
     text-align: center;
     color: #B2A674;

@@ -20,5 +20,6 @@ var textArray = [
     'f = g;\n',
     'clicker();\n',
     'subtoalizardguy;\n',
-    '//lol\n'
+    '//lol\n',
+    'trapped + sphere = panic;\n'
 ];
